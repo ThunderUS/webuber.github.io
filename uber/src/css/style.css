@@ -77,6 +77,9 @@ nav {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase; }
+  .subheader .subheader_btn:hover {
+    background-image: none;
+    background-color: #1eacc7; }
 
 .promo {
   padding: 150px 0 135px 0;
@@ -122,6 +125,9 @@ nav {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase; }
+    .promo .promo_btn:hover {
+      background-image: none;
+      background-color: #1eacc7; }
 
 .workWithUs {
   padding: 71px 0 65px 0; }
@@ -226,6 +232,7 @@ nav {
       text-transform: uppercase;
       text-align: center; }
     .mobile_item_plus {
+      position: relative;
       width: 26px;
       height: 26px;
       background-color: #000000;
@@ -244,6 +251,25 @@ nav {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       cursor: pointer; }
+      .mobile_item_plus:before {
+        content: "";
+        display: block;
+        margin: auto 0;
+        width: 14px;
+        height: 2px;
+        background-color: #1eacc7; }
+      .mobile_item_plus:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 47%;
+        width: 2px;
+        height: 14px;
+        background-color: #1eacc7;
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all; }
+      .mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+        background-color: pink; }
 
 .car_up {
   position: relative;
@@ -304,5 +330,50 @@ nav {
     font-weight: 300;
     line-height: 24px;
     text-align: center; }
+
+.require {
+  padding: 68px 0 84px 0; }
+  .require_block {
+    margin: 33px 0; }
+    .require_block_nmb {
+      margin-bottom: 0; }
+  .require_title {
+    color: #1ca8c3;
+    font-size: 22px;
+    font-weight: 400; }
+    .require_title_pink {
+      color: #ff5656;
+      font-size: 22px;
+      font-weight: 400; }
+  .require_list {
+    list-style-type: none;
+    padding-left: 50px;
+    margin-top: 22px; }
+    .require_list li {
+      position: relative;
+      color: #222222;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 10px; }
+      .require_list li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -32px;
+        top: 3px;
+        width: 21px;
+        height: 20px;
+        background: url("../icons/plus.png") center center/cover no-repeat; }
+  .require_descr {
+    margin-top: 25px;
+    color: #1ca8c3;
+    font-weight: 300;
+    font-style: 17px;
+    line-height: 24px; }
+  .require .warning .require_title {
+    color: #ff5656; }
+  .require .warning .require_list li:before {
+    background: url("../icons/minus.png") center center/cover no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
