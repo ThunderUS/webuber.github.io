@@ -90,6 +90,100 @@
             margin: 10px
             .menu_link
                 font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden  
+        display: none
+    .xs-visible
+        display: block
+    
+    .xs-visible.subheader_call_tel
+        display: block
+        margin-top: 10px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+    .subheader
+        .subheader_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+            color: #ffffff
+            font-size: 10px
+            font-weight: 400
+            text-transform: uppercase
+    .promo
+        .promo_header
+            font-size: 35px
+            line-height: 24px
+        .promo_subheader
+            font-size: 25px
+            line-height: 20px
+    .workWithUs
+        .workWithUs_title
+            font-size: 28px
+    .workWithUs_title
+        font-size: 30px
+    .footer
+        &_divinder
+            transform: translateX(4px)
+        &_wrapper
+            
+            .footer_wrapper_links
+                
+                transform: translateX(40px)
+            &_iconleft
+                text-align: center
+                justify-content: center
+                width: auto
+                margin-top: 5px
+            &_shops
+                margin-top: 7px
+                margin-bottom: 7px
+                display: flex
+                flex-direction: row
+                
+                justify-content: center
+                transform: translateX(3%)
+            &_link
+                margin-top: 5px
+                margin-right: 5px
+                    
+
+
+    .car_up_img
+        width: 100%    
+                    
+                    
+                    
 
 
 
