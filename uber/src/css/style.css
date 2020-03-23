@@ -1,6 +1,9 @@
 * {
   font-family: "Roboto", sans-serif; }
 
+body {
+  min-height: 1920px; }
+
 header {
   position: relative;
   height: 50px; }
@@ -29,6 +32,8 @@ nav {
   .menu .menu_item {
     border-right: 2px dotted black;
     padding-right: 28px; }
+    .menu .menu_item:last-child {
+      border-right: none; }
 
 .subheader {
   top: 50px;
@@ -501,8 +506,86 @@ nav {
           text-transform: uppercase; }
 
 .subfooter_line {
-  width: 1948px;
   height: 8px;
   background-color: #070716; }
+
+@media (max-width: 1200px) {
+  .menu .menu_item {
+    padding-right: 20px; }
+    .menu .menu_item .menu_link {
+      font-size: 13px; }
+
+  .promo .promo_header {
+    font-size: 55px; }
+
+  .workWithUs .workWithUs_item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .workWithUs .workWithUs_item .workWithUs_descr {
+      width: 300px; } }
+@media (max-width: 991px) {
+  .menu .menu_item {
+    padding-right: 8px; }
+    .menu .menu_item .menu_link {
+      font-size: 10px; }
+
+  .subheader .subheader_logo img {
+    width: 100%; }
+  .subheader .subheader_text {
+    font-size: 11px; }
+  .subheader_call_tel {
+    font-size: 18px; }
+  .subheader .subheader_btn {
+    width: 100%;
+    margin-top: 21px;
+    height: 40px; }
+
+  .promo .promo_header {
+    font-size: 40px; }
+  .promo .promo_subheader {
+    font-size: 30px; }
+
+  .workWithUs .workWithUs_title {
+    font-size: 36px; }
+  .workWithUs .workWithUs_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .workWithUs .workWithUs_item .workWithUs_descr {
+      margin-top: 20px; } }
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.6s;
+    transition: 0.6s; }
+    .menu_active {
+      left: 0; }
+    .menu .menu_item {
+      padding-right: 0;
+      border: none;
+      margin: 10px; }
+      .menu .menu_item .menu_link {
+        font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
