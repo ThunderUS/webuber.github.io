@@ -12,6 +12,14 @@
             align-items: flex-start
             .workWithUs_descr
                 width: 300px
+    .mobile
+        .row
+
+        &_item
+            width: 300px
+            height: 260px
+    .footer
+        padding: 0px 10px 0 10px
 
 @media ( max-width: 991px )
     .menu
@@ -45,6 +53,21 @@
             align-items: center
             .workWithUs_descr
                 margin-top: 20px
+    .footer
+        &_divinder
+            transform: translateX(4px)
+        &_wrapper
+            .footer_wrapper_links
+                margin-right: 75px
+                transform: translateX(40px)
+            &_shops
+                display: flex
+                flex-direction: column
+                padding-right: 40px
+            &_link
+                margin-top: 3px
+
+
 
 @media ( max-width: 767px )
     .menu

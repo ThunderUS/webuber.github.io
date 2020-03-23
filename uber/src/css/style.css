@@ -523,7 +523,14 @@ nav {
         -ms-flex-align: start;
             align-items: flex-start; }
     .workWithUs .workWithUs_item .workWithUs_descr {
-      width: 300px; } }
+      width: 300px; }
+
+  .mobile_item {
+    width: 300px;
+    height: 260px; }
+
+  .footer {
+    padding: 0px 10px 0 10px; } }
 @media (max-width: 991px) {
   .menu .menu_item {
     padding-right: 8px; }
@@ -557,7 +564,26 @@ nav {
         -ms-flex-align: center;
             align-items: center; }
     .workWithUs .workWithUs_item .workWithUs_descr {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  .footer_divinder {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px); }
+  .footer_wrapper .footer_wrapper_links {
+    margin-right: 75px;
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px); }
+  .footer_wrapper_shops {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 40px; }
+  .footer_wrapper_link {
+    margin-top: 3px; } }
 @media (max-width: 767px) {
   .menu {
     position: fixed;
